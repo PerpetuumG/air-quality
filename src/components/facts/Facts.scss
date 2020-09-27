@@ -1,5 +1,7 @@
 .facts{
-padding: 100px 0 50px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 100px 60px 50px;
 
   &-title {
     font-weight: normal;
@@ -12,12 +14,23 @@ padding: 100px 0 50px;
 
   &-slide {
     &-desc{
-    margin-top: 40px;
+      margin-top: 40px;
       font-weight: normal;
       font-size: 27px;
       line-height: 32px;
       text-align: center;
       color: #fff;
     }
+  }
+
+  & > .swiper-button-prev, .swiper-button-next {
+    color: #b78a3f;
+  }
+
+  & > .swiper-button-prev{
+    left: 10px;
+  }
+  & > .swiper-button-next{
+    right: 10px;
   }
 }
