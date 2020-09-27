@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeroBlock.scss';
+// import '../../App.scss';
 
 const HeroBlock = ({title, links, logos}) => {
     const logosImages = logos.map((logoItem) => <img src={logoItem} alt="partner-logo" className="hero-partners-item"/>);

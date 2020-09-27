@@ -1,0 +1,23 @@
+.facts{
+padding: 100px 0 50px;
+
+  &-title {
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &-slide {
+    &-desc{
+    margin-top: 40px;
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 32px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
