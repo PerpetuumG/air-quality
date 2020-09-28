@@ -33,9 +33,9 @@ import './Facts.scss';
                 }}
                 spaceBetween={40}
                 slidesPerView={3}
-                centeredSlides={true}
+                // centeredSlides={true}
                 slidesPerGroup={3}
-                loop={true}
+                // loop={true}
                 // loopFillGroupWithBlank={true}
             >
                 {factsSlides}
