@@ -33,4 +33,26 @@
   & > .swiper-button-next{
     right: 10px;
   }
+
+  &-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 66px;
+
+    &-bullet {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin: 0 20px;
+      background-color: transparent;
+      border: 2px solid #878a3f;
+      opacity: 1;
+      transition: 0.3s background-color;
+    }
+
+    & > .swiper-pagination-bullet-active {
+      background-color: #b78a3f;
+    }
+  }
 }

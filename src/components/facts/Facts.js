@@ -24,16 +24,24 @@ import './Facts.scss';
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 }}
-                pagination
+                pagination={{
+                    el: '.facts-pagination',
+                    clickable: 'true',
+                    renderBullet: function(index, className) {
+                        return `<span class = "facts-pagination-bullet ${className}"></span>`;
+                     },
+                }}
                 spaceBetween={40}
                 slidesPerView={3}
+                centeredSlides={true}
                 slidesPerGroup={3}
                 loop={true}
-                loopFillGroupWithBlank={true}
+                // loopFillGroupWithBlank={true}
             >
                 {factsSlides}
             </Swiper>
             <div className="swiper-button-next"/>
+            <div className="facts-pagination"/>
         </section>
     );
 };
