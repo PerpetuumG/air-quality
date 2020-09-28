@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import HeroBlock from "./components/HeroBlock/HeroBlock";
@@ -10,6 +10,7 @@ import shidLogo from './assets/shid_emozhl_logo.svg';
 import './reset.scss';
 
 function App() {
+
 
     const partners = [
         shidLogo,
@@ -94,7 +95,7 @@ function App() {
         }
     ];
 
-  return (
+    return (
     <>
       <HeroBlock title="Качество атмосферного воздуха и здоровье"
                  logos={partners}
