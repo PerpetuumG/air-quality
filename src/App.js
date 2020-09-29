@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import './App.scss';
 import HeroBlock from "./components/HeroBlock/HeroBlock";
 import Facts from "./components/facts/Facts";
+import AirQuality from "./components/AirQuality/AirQuality";
 import SectorsList from './components/SectorsList/SectorsList';
+import Footer from "./components/Footer/Footer";
 import gsLogo from './assets/GC_logo.svg';
 import ITNLogo from './assets/ITN_logo.svg';
 import shidLogo from './assets/shid_emozhl_logo.svg';
@@ -95,15 +97,20 @@ function App() {
         }
     ];
 
+    const author = "Alpeyev Yuriy";
+    const designer = "Валерией Бубырь";
+
     return (
     <>
       <HeroBlock title="Качество атмосферного воздуха и здоровье"
                  logos={partners}
                  links={navLinks}/>
-                 <Facts title="Основные факты" slides={factSlides}/>
-                 <SectorsList title="Политика по уменьшению загрязнений"
+      <Facts title="Основные факты" slides={factSlides}/>
+      <AirQuality/>
+      <SectorsList title="Политика по уменьшению загрязнений"
                               subtitle="Есть много примеров успешной политики по уменьшению загрязнения воздуха в таких секторах, как транспорт, городское планирование, энергетика и промышленность:"
                  items={sectors} />
+      <Footer links={navLinks} partners={partners} author={author} designer={designer}/>
     </>
   );
 }
