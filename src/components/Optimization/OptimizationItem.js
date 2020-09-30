@@ -28,7 +28,7 @@ const OptimizationItem = ({sector, number}) => {
             {
                     isToolTipShowing && <p className={`sectors-list-item-tooltip ${
                         isDirectionSwitched
-                            ? "sectors-list-item-tooltip-switched"
+                            ? "optimization-list-item-tooltip-switched"
                             : ""
                     }`}>
                         {sector.description}
