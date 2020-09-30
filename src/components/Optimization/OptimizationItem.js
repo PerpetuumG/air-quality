@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const SectorItem = ({sector, number}) => {
+const OptimizationItem = ({sector, number}) => {
     const [isToolTipShowing, setToolTipShowing] = useState(false);
     const [isDirectionSwitched, setDirectionSwitched] = useState(false);
     const toggleToolTip = (newValue) => {
@@ -38,4 +38,4 @@ const SectorItem = ({sector, number}) => {
     );
 };
 
-export default SectorItem;
+export default OptimizationItem;

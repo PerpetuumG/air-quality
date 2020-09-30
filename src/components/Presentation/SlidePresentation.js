@@ -1,7 +1,7 @@
 import React from 'react';
-import './Facts.scss';
+import './Presentation.scss';
 
-const SlideFacts = ({item}) => {
+const SlidePresentation = ({item}) => {
     return (
         <div className="facts-slide">
             <img src={item.imgUrl} alt="slide_image"/>
@@ -12,4 +12,4 @@ const SlideFacts = ({item}) => {
     );
 };
 
-export default SlideFacts;
+export default SlidePresentation;

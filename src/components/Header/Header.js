@@ -1,8 +1,8 @@
 import React from 'react';
-import './HeroBlock.scss';
+import './Header.scss';
 // import '../../App.scss';
 
-const HeroBlock = ({title, links, logos}) => {
+const Header = ({title, links, logos}) => {
     const logosImages = logos.map((logoItem, i) => <img src={logoItem} alt="partner-logo" className="hero-partners-item" key={i}/>);
     const navItems = links.map((link, i) => <a href={link.href} className="hero-navigation-item" key={i}>{link.title}</a>);
 
@@ -22,4 +22,4 @@ const HeroBlock = ({title, links, logos}) => {
     );
 };
 
-export default HeroBlock;
+export default Header;

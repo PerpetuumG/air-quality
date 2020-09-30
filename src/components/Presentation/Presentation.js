@@ -1,17 +1,17 @@
 import React from 'react';
-import SlideFacts from './SlideFacts';
+import SlidePresentation from './SlidePresentation';
 import SwiperCore, {Navigation, Pagination} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
-import './Facts.scss';
+import './Presentation.scss';
 
     SwiperCore.use([Navigation, Pagination])
 
-    const Facts = ({title, slides}) => {
+    const Presentation = ({title, slides}) => {
     const factsSlides = slides.map((slideInfo) => <SwiperSlide key={slideInfo.id}>
-        <SlideFacts item={slideInfo} />
+        <SlidePresentation item={slideInfo} />
     </SwiperSlide>);
 
 
@@ -25,7 +25,7 @@ import './Facts.scss';
                     prevEl: '.swiper-button-prev',
                 }}
                 pagination={{
-                    el: '.facts-pagination',
+                    el: '.Presentation-pagination',
                     clickable: 'true',
                     renderBullet: function(index, className) {
                         return `<span class = "facts-pagination-bullet ${className}"></span>`;
@@ -46,4 +46,4 @@ import './Facts.scss';
     );
 };
 
-export default Facts;
+export default Presentation;

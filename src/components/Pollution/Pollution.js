@@ -1,11 +1,11 @@
 import React, {useState, useEffect, useRef} from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import './AirQuality.scss';
+import './Pollution.scss';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoieWFtbnlrIiwiYSI6ImNrZmxhZjZscjAwb2gycm54aWo2bGJvZnEifQ.BbYutmem-GZtYciYeMln1A';
 
-const AirQuality = () => {
+const Pollution = () => {
     const mapContainer = useRef(null);
     const [locationInfo] = useState({
         lng: 31,
@@ -32,4 +32,4 @@ const AirQuality = () => {
     );
 };
 
-export default AirQuality;
+export default Pollution;

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import HeroBlock from "./components/HeroBlock/HeroBlock";
-import Facts from "./components/facts/Facts";
-import AirQuality from "./components/AirQuality/AirQuality";
-import SectorsList from './components/SectorsList/SectorsList';
+import Header from "./components/Header/Header";
+import Presentation from "./components/Presentation/Presentation";
+import Pollution from "./components/Pollution/Pollution";
+import OptimizationList from './components/Optimization/OptimizationList';
 import Footer from "./components/Footer/Footer";
 import gsLogo from './assets/GC_logo.svg';
 import ITNLogo from './assets/ITN_logo.svg';
@@ -23,7 +23,7 @@ function App() {
     const navLinks = [
         {
             title: "Основные факты",
-            href: "#facts"
+            href: "#Presentation"
         },
         {
             title: "Индекс качетсва воздуха",
@@ -36,29 +36,29 @@ function App() {
     ];
 
     const factSlides = [
-        {   id: '1332',
-            imgUrl: require("./assets/facts-slide/slider-1.jpg"),
+        {   id: '1',
+            imgUrl: require("./assets/presentation-slide/slider-1.jpg"),
             desc: "Женщины и дети - главные жертвы загрязнения воздуха"
         },
         {
-            id: '1333',
-            imgUrl: require("./assets/facts-slide/slider-2.jpg"),
+            id: '2',
+            imgUrl: require("./assets/presentation-slide/slider-2.jpg"),
             desc: "Защитники окружающей среды подтвергаются преследованиям"
         },
         {
-            id: '1334',
-            imgUrl: require("./assets/facts-slide/slider-3.jpg"),
+            id: '3',
+            imgUrl: require("./assets/presentation-slide/slider-3.jpg"),
             desc: "Загрязнение воздуха – нарушение прав человека"
         },
         {
-            id: '1335',
-            imgUrl: require("./assets/facts-slide/slider-4.jpg"),
+            id: '4',
+            imgUrl: require("./assets/presentation-slide/slider-4.jpg"),
             desc: "4,2 миллиона случаев преждевременной смерти людей из-за загрязнения \n" +
                 "атмосферного воздуха"
         },
         {
-            id: '1336',
-            imgUrl: require("./assets/facts-slide/slider-5.jpg"),
+            id: '5',
+            imgUrl: require("./assets/presentation-slide/slider-5.jpg"),
             desc: "Согласно оценкам, суммарный объем затрат \n" +
                 "в связи с загрязнением воздуха превышает 5 трлн долл. в год."
         },
@@ -102,14 +102,14 @@ function App() {
 
     return (
     <>
-      <HeroBlock title="Качество атмосферного воздуха и здоровье"
-                 logos={partners}
-                 links={navLinks}/>
-      <Facts title="Основные факты" slides={factSlides}/>
-      <AirQuality/>
-      <SectorsList title="Политика по уменьшению загрязнений"
-                              subtitle="Есть много примеров успешной политики по уменьшению загрязнения воздуха в таких секторах, как транспорт, городское планирование, энергетика и промышленность:"
-                 items={sectors} />
+      <Header title="Качество атмосферного воздуха и здоровье"
+              logos={partners}
+              links={navLinks}/>
+      <Presentation title="Основные факты" slides={factSlides}/>
+      <Pollution/>
+      <OptimizationList title="Политика по уменьшению загрязнений"
+                        subtitle="Есть много примеров успешной политики по уменьшению загрязнения воздуха в таких секторах, как транспорт, городское планирование, энергетика и промышленность:"
+                        items={sectors} />
       <Footer links={navLinks} partners={partners} author={author} designer={designer}/>
     </>
   );
