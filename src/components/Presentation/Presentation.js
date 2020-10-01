@@ -25,7 +25,7 @@ import './Presentation.scss';
                     prevEl: '.swiper-button-prev',
                 }}
                 pagination={{
-                    el: '.Presentation-pagination',
+                    el: '.pres-pagination',
                     clickable: 'true',
                     renderBullet: function(index, className) {
                         return `<span class = "pres-pagination-bullet ${className}"></span>`;
