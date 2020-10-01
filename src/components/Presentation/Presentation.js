@@ -33,7 +33,7 @@ import './Presentation.scss';
                 }}
                 spaceBetween={40}
                 slidesPerView={3}
-                slidesPerGroup={1}
+                slidesPerGroup={3}
                 loop={true}
             /*    сделал по одному чтобы преключались и зациклил*/
             >
