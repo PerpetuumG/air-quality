@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c9e6296f.chunk.css",
+    "main.js": "/static/js/main.7e0e28c2.chunk.js",
+    "main.js.map": "/static/js/main.7e0e28c2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f9aa8cfc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f9aa8cfc.js.map",
+    "static/css/2.e6551feb.chunk.css": "/static/css/2.e6551feb.chunk.css",
+    "static/js/2.e834cf8e.chunk.js": "/static/js/2.e834cf8e.chunk.js",
+    "static/js/2.e834cf8e.chunk.js.map": "/static/js/2.e834cf8e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ca9f3406ab0837da2517858d52951735.js": "/precache-manifest.ca9f3406ab0837da2517858d52951735.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.e6551feb.chunk.css.map": "/static/css/2.e6551feb.chunk.css.map",
+    "static/css/main.c9e6296f.chunk.css.map": "/static/css/main.c9e6296f.chunk.css.map",
+    "static/js/2.e834cf8e.chunk.js.LICENSE.txt": "/static/js/2.e834cf8e.chunk.js.LICENSE.txt",
+    "static/media/city-planing.jpg": "/static/media/city-planing.f8f67844.jpg",
+    "static/media/energetics.jpg": "/static/media/energetics.43f9dac6.jpg",
+    "static/media/energy.jpg": "/static/media/energy.fb084e1e.jpg",
+    "static/media/Header.scss": "/static/media/header.3573d221.jpg",
+    "static/media/industry.jpg": "/static/media/industry.5ec44869.jpg",
+    "static/media/logo.svg": "/static/media/logo.ee7cd8ed.svg",
+    "static/media/partner_GC.svg": "/static/media/partner_GC.e60be19e.svg",
+    "static/media/partner_ITN.svg": "/static/media/partner_ITN.899cd278.svg",
+    "static/media/partner_shid.svg": "/static/media/partner_shid.8dd4ef71.svg",
+    "static/media/pre-1.jpg": "/static/media/pre-1.3e6d941c.jpg",
+    "static/media/pre-2.jpg": "/static/media/pre-2.2d01e323.jpg",
+    "static/media/pre-3.jpg": "/static/media/pre-3.2e8165b3.jpg",
+    "static/media/pre-4.jpg": "/static/media/pre-4.4bfc6137.jpg",
+    "static/media/pre-5.jpg": "/static/media/pre-5.b2936b7d.jpg",
+    "static/media/transport.jpg": "/static/media/transport.65643b05.jpg",
+    "static/media/utilisation.jpg": "/static/media/utilisation.a8b6caee.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9aa8cfc.js",
+    "static/css/2.e6551feb.chunk.css",
+    "static/js/2.e834cf8e.chunk.js",
+    "static/css/main.c9e6296f.chunk.css",
+    "static/js/main.7e0e28c2.chunk.js"
+  ]
+}
