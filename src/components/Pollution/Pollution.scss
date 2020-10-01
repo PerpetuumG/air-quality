@@ -8,22 +8,12 @@
     line-height: 41px;
     color: #fff;
 
-    @media (min-width: 576px){
-      margin-bottom: 42px;
-
-      font-size: 35px;
-      line-height: 41px;
-    }
-
   }
   &-map {
     height: 560px;
     margin: 42px 0;
 
-    @media (min-width: 576px){
-      height: 560px;
-      margin-bottom: 42px;
-    }
+
   }
   &-info {
     font-weight: normal;
@@ -31,9 +21,5 @@
     line-height: 27px;
     color: #fff;
 
-    @media (min-width: 576px){
-      font-size: 23px;
-      line-height: 27px;
-    }
   }
 }
