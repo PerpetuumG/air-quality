@@ -5,14 +5,8 @@ const OptimizationItem = ({optimization, number}) => {
     const [isDirectionSwitched, setDirectionSwitched] = useState(false);
     const toggleToolTip = (newValue) => {
             setDirectionSwitched( number % 3 === 0)
-
         setToolTipShowing(newValue);
     }
-    // const toggleToolTip = () => {
-    //     setToolTipShowing(
-    //         !isToolTipShowing
-    //     )
-    // }
 
     return (
         <div className="optimization-list-item"
