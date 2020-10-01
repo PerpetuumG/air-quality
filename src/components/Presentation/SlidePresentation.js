@@ -1,15 +1,15 @@
 import React from 'react';
 import './Presentation.scss';
 
-const SlidePresentation = ({item}) => {
+const SlidePres = ({item}) => {
     return (
-        <div className="facts-slide">
+        <div className="pres-slide">
             <img src={item.imgUrl} alt="slide_image"/>
-            <p className="facts-slide-desc">
+            <p className="pres-slide-desc">
                 {item.desc}
             </p>
         </div>
     );
 };
 
-export default SlidePresentation;
+export default SlidePres;

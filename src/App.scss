@@ -4,12 +4,31 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+
 body{
   background-color: #737373;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 .container {
-  max-width: 1280px;
+  max-width: 100%;
   min-width: 320px;
   margin: 0 auto;
+  overflow-x: hidden;
+
+
+  @media (min-width: 900px) {
+    max-width: 768px;
+    padding: 0;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1280px;
+    padding: 0 10px;
+  }
 }

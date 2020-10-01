@@ -1,5 +1,5 @@
 import React from 'react';
-import SlidePresentation from './SlidePresentation';
+import SlidePres from './SlidePresentation';
 import SwiperCore, {Navigation, Pagination} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/swiper.scss';
@@ -9,15 +9,15 @@ import './Presentation.scss';
 
     SwiperCore.use([Navigation, Pagination])
 
-    const Presentation = ({title, slides}) => {
-    const factsSlides = slides.map((slideInfo) => <SwiperSlide key={slideInfo.id}>
-        <SlidePresentation item={slideInfo} />
+    const Presentation = ({title, pres}) => {
+    const presSlides = pres.map((presInfo) => <SwiperSlide key={presInfo.id}>
+        <SlidePres item={presInfo} />
     </SwiperSlide>);
 
 
     return (
-        <section className="facts container">
-            <h2 className="facts-title">{title}</h2>
+        <section className="pres container" id="presentation">
+            <h2 className="pres-title">{title}</h2>
             <div className="swiper-button-prev"/>
             <Swiper
                 navigation={{
@@ -28,20 +28,19 @@ import './Presentation.scss';
                     el: '.Presentation-pagination',
                     clickable: 'true',
                     renderBullet: function(index, className) {
-                        return `<span class = "facts-pagination-bullet ${className}"></span>`;
+                        return `<span class = "pres-pagination-bullet ${className}"></span>`;
                      },
                 }}
                 spaceBetween={40}
                 slidesPerView={3}
-                // centeredSlides={true}
-                slidesPerGroup={3}
-                // loop={true}
-                // loopFillGroupWithBlank={true}
+                slidesPerGroup={1}
+                loop={true}
+            /*    сделал по одному чтобы преключались и зациклил*/
             >
-                {factsSlides}
+                {presSlides}
             </Swiper>
             <div className="swiper-button-next"/>
-            <div className="facts-pagination"/>
+            <div className="pres-pagination"/>
         </section>
     );
 };

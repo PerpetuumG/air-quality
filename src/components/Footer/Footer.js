@@ -1,21 +1,21 @@
 import React from 'react';
 import './Footer.scss';
 
-const Footer = ({partners, links, author, designer}) => {
-    const partnersLogos = partners.map((logo, i) => <img key={i} src={logo} alt={'partner logo'}
+const Footer = ({partners, navs, author, designer}) => {
+    const partnersImg = partners.map((partnerItem, i) => <img key={i} src={partnerItem} alt={'partner logo'}
                                                          className="footer-partners-item"/>);
-    const navLinks = links.map((link, i) => <a href={link.href} key={i} className={'footer-nav-link'}>{link.title}</a>);
+    const navigation = navs.map((nav, i) => <a href={nav.href} key={i} className={'footer-nav-navs'}>{nav.title}</a>);
 
     return (
         <footer className="footer">
             <div className="container">
                 <div className="footer-partners">
-                    {partnersLogos}
+                    {partnersImg}
                 </div>
 
                 <div className="footer-text-wrap">
                     <div className="footer-nav">
-                        {navLinks}
+                        {navigation}
                     </div>
                     <p className="footer-nav-text">
                         Сайт разрабол <span className="text-yellow">{author}</span> в учебных целях, в рамках образовательной программы IT nation. Дизайн сайта создан <span className="text-yellow">{designer}</span>.
